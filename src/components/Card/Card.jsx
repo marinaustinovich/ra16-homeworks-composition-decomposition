@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Card.css';
 
 /**
@@ -21,5 +22,14 @@ function Card({ img, title, text, textSecondery, href, className, ...props }) {
         </div>
     );
 }
+
+Card.propTypes = {
+    img: PropTypes.string,
+    title: PropTypes.string,
+    text: PropTypes.string,
+    textSecondery: PropTypes.string,
+    href: PropTypes.string,
+    className: PropTypes.string,
+};
 
 export default Card;
