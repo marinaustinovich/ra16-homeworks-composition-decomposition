@@ -1,6 +1,5 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import './Banner.css';
+import React from "react";
+import "./Banner.css";
 
 /**
  * Компонент Banner представляет баннер с изображением и ссылкой.
@@ -12,17 +11,15 @@ import './Banner.css';
  * @param {string} props.alt - Альтернативный текст для изображения.
  * @returns {JSX.Element} - Компонент Banner.
  */
-function Banner({href, src, alt}) {
-    return (
-        <a href={href}>
-            <img src={src} alt={alt} className='banner'/>
-        </a>
-    )
-}
 
-Banner.propTypes = {
-    src: PropTypes.string.isRequired,
-    href: PropTypes.string.isRequired,
-}
+type Props = {
+  src: string;
+  href: string;
+  alt?: string;
+};
 
-export default Banner
+export const Banner = ({ href, src, alt }: Props) => (
+  <a href={href}>
+    <img src={src} alt={alt ?? ""} className="banner" />
+  </a>
+);

@@ -1,8 +1,8 @@
+Декомпозиция
+
 [![Build status](https://ci.appveyor.com/api/projects/status/drfceu9f3s5gcblp/branch/main?svg=true)](https://ci.appveyor.com/project/marinaustinovich/ra16-homeworks-composition-decomposition/branch/main)
 
 deployment: https://marinaustinovich.github.io/ra16-homeworks-composition-decomposition/
-
-Декомпозиция
 ===
 
 Вы работаете в стартапе, который решил тягаться с самим Яндексом в части предоставления контента. Это, конечно же, шутка, но задача нешуточная.
